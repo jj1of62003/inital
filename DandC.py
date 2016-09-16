@@ -12,7 +12,7 @@ def msort1(numList):
 def msort(numList, first, last):
 	"""This is the initiator for the Merg sort algorithm"""
 	listLen = len(numList)
-	if listLen != 1:
+	if first < last:
 		middle = listLen // 2
 		msort(numList, first, middle)
 		msort(numList, middle + 1, last)
