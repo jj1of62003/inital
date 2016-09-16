@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/bin/python
 
 class node:
 	def __init__(self):
@@ -18,7 +18,7 @@ def msort(numList, first, last):
 		msort(numList, middle + 1, last)
 		merg(numList, first, middle, last)
 
-def merg(numList, first, middle last):
+def merg(numList, first, middle, last):
 	L = numList[first:middle]
 	R = numList[middle:last + 1]
 	i, j = 0
